@@ -24,7 +24,7 @@ if (isset($_SESSION['login_user'])) {
 	echo 'Welcome '.$_SESSION['login_user'].'!';
 }
 ?></i>
-	<a href="home.php" style="color:white">Home</a>
+	<a href="index.html" style="color:white">Home</a>
         <a href="movielist.php" style="color:white">Browse</a>
 	<a href="cart.php" style="color:white">My Cart</a>
 	<a href="about.html" style="color:white">About</a>
