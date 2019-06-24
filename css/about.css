@@ -1,0 +1,147 @@
+body{
+	margin:0;
+	background-color: #fff;
+}
+.div-one{
+ 	position: relative;
+  	text-align: center;
+  	color: white;
+ }
+.div-one-img{
+	width:100%;
+	height:32vh;
+} 
+.div-one-imgtext{
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-family: "Open Sans",Sans-serif;
+   color:#fff;
+   font-size: 2.5em;
+   /*font-weight: 700;*/
+}  
+.div-one-imgtext>h2{
+   margin:1px;
+}
+.div-one-imgtext>span{
+	margin-bottom: :20px;
+	color: rgba(250,246,246,.95);
+	font: 0.5em"Open Sans";
+}
+.div-one-imgtext>i{
+	font-size: 0.4em;
+	color:#fff; 
+	padding:0px 10px;
+}
+.div-one-imgtext>a{
+	color: rgba(250,246,246,.95);
+	font: 0.5em"Open Sans";
+	text-decoration: none;
+}
+.div-two{
+	display: grid;
+	direction: row;
+	grid-template-columns: repeat(12,1fr);
+	/*background-color: grey;*/
+	margin:90px;
+	grid-gap: 50px;
+}
+.div-two-grid1{
+	grid-column: span 6;
+	background-color:#fff;
+}
+.div-two-grid1>img{
+	object-fit: cover;
+	border-radius: 40px;
+	width: 100%;    
+	height: 100%;
+}
+.div-two-grid2{
+	grid-column: span 6;
+	background-color:#fff;
+}
+.div-two-grid2>p{
+	margin:0px auto;
+	color: #4B4B4B;
+	font-weight: 400;
+	font: 14px "Open Sans";
+	font-size: 20px;
+    line-height: 1.6em;
+    letter-spacing: 0px;
+}
+.sec-one{
+    display:flex;
+	flex-wrap: wrap;
+	justify-content:center;
+}
+.zone{
+	position: relative;
+	top:0px;
+	margin: 10px;
+	transition: top ease 0.2s;
+	font-family:Open Sans;
+}
+.zone.card:hover {
+	background-color: #d60000;
+	top:-11px;
+	color:#fff !important;
+}
+.card{
+	width:280px;
+	height: 250px;
+	padding: 35px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 6px 61px 6px rgba(0,0,0,.1);
+    font-family:Open Sans;
+	color:#d60000;
+}
+.zone h3{
+	margin:20px 20px 20px 5px;
+	color:#d60000;
+}
+.zone.card:hover h3{
+	color:#fff !important;
+}
+.zone >p{
+	line-height: 22px;
+    font-weight: 400;
+    font-style: normal;
+    color: #4b4b4b;
+    font-size: 15px;
+}
+.zone.card:hover p{
+	color:#fff !important;
+}
+.zone >i{
+	color:#d60000;
+	font-size:45px;
+}
+.zone.card:hover i{
+	color:#fff !important;
+}
+.div-three{
+	margin:80px;
+}
+.div-three>p{
+	color: #333333;
+
+	font:26px "Open Sans";
+	line-height:26px;
+	text-size-adjust:100%;
+	font-weight: bolder;
+}
+@media screen and (max-width: 600px){
+	.div-two{
+		grid-gap: 0px;
+	}
+	.div-two-grid1{
+		grid-column: span 12;
+		background-color:#fff;
+	}
+	.div-two-grid2{
+		grid-column: span 12;
+		background-color:#fff;
+	}
+}
